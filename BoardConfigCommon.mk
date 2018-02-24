@@ -24,7 +24,6 @@ TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
 TARGET_FS_CONFIG_GEN += \
     $(VENDOR_PATH)/fs_config/file_caps.fs \
-    $(VENDOR_PATH)/fs_config/qcom_aids.fs \
     $(VENDOR_PATH)/fs_config/mot_aids.fs
 
 # Platform
@@ -55,7 +54,7 @@ TARGET_KERNEL_SOURCE := kernel/motorola/msm8916
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth

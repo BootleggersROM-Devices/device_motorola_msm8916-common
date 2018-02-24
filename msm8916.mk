@@ -85,7 +85,8 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libbson \
     libc_util \
-    libshims_camera
+    libshims_camera \
+    Camera2
 
 # Display
 PRODUCT_PACKAGES += \
@@ -241,4 +242,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 $(call inherit-product-if-exists, vendor/motorola/msm8916-common/msm8916-common-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/aosmp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
