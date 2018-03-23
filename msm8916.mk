@@ -218,6 +218,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Inherit common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
+
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf
