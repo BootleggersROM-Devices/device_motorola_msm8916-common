@@ -86,6 +86,7 @@ PRODUCT_PACKAGES += \
     libbson \
     libc_util \
     libshims_camera \
+    libboringssl-compat \
     Camera2
 
 # Display
